@@ -17,5 +17,35 @@
 
 	<h1>ChuzeMoto | Sign Up</h1>
 
+	<div class="container">
+
+		<form method="POST" action="/signup">
+			<label for="fname">First Name:
+				<input name="fname" type="text" required>
+			</label>
+			<label for="lname">Last Name:
+				<input name="lname" type="text" required>
+			</label>
+			<label for="inseam">Inseam:
+				<select name="inseam" required>
+					<option value="28">28</option>
+					<option value="30">30</option>
+					<option value="32">32</option>
+					<option value="34">34</option>
+					<option value="36">36</option>
+					<option value="38">38</option>
+					<option value="40">40</option>
+				</select>
+			</label>
+			<label for="email">Email:
+				<input name="email" type="email" requied>
+			</label>
+			<label for="password">Password:
+				<input name="password" type="password" required>
+			</label>
+			<input type="submit">
+		</form>
+	</div>
+
 </body>
 </html>
