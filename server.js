@@ -35,7 +35,7 @@ app.set("view engine", "ejs")
 
 // set static files location
 // used for requests that our front end will make
-app.use(express.static(__dirname + 'public'))
+app.use(express.static(__dirname + '/public'))
 
 // ROUTES FOR OUR API
 var apiRoutes = require('./app/routes/routes.js')(app, express)
