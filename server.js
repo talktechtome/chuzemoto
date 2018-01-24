@@ -1,8 +1,8 @@
 // server.js
+
 // LOAD THE PACKAGES
 var express 	= require("express")
 var app 		= express();	// creating an express framework for the app
-var port 		= process.env.PORT || 8080
 var mongoose	= require("mongoose")
 var config		= require('./config')
 var morgan		= require('morgan')
@@ -27,7 +27,7 @@ app.use(function(req, res, next) {
 app.use(morgan('dev'))
 
 // connect to our database 
-// mongoose.connect(config.database);
+mongoose.connect(config.database);
 
 // sets up ejs as view engine
 app.set("view engine", "ejs")
@@ -41,5 +41,5 @@ app.use(express.static(__dirname + '/public'))
 var apiRoutes = require('./app/routes/routes.js')(app, express)
 
 // START THE server
-app.listen(port)
-console.log('The magic happens on port ' + port)
+app.listen(config.port)
+console.log('The magic happens on port ' + config.port)
