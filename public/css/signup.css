@@ -3,3 +3,21 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 }
+
+form {
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 25px;
+	width: 25%;
+	margin: 0 auto;
+}
+
+label {
+	display: block;
+	margin-bottom: 25px;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
