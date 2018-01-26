@@ -1,4 +1,5 @@
 var User 	= require('../models/user.js')
+var motocycles = require('../data/motorcycles.json')
 
 module.exports = function(app, express) {
 
@@ -56,7 +57,7 @@ module.exports = function(app, express) {
 		// find the user (or at least check if exists)
 		User.findOne({
 			email: req.body.email
-		}).select('password').exec(function(err, user) {
+		}).exec(function(err, user) {
 
 			if (err) throw err;
 
@@ -80,9 +81,16 @@ module.exports = function(app, express) {
 				}
 
 				// if matched, redirect to dashboard page.
-				res.render('dashboard.ejs')
+				res.render('dashboard.ejs', { 'user': user })
 
 			}
 		})
+	})
+
+	// DASHBOARD PAGE
+
+	// GET - chuzemoto.herokuapp.com/dashboard
+	app.get('/dashboard', function(req, res){
+		res.render
 	})
 }
