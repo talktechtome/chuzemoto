@@ -1,0 +1,163 @@
+[
+	{ 
+		"name": "Ninja 300",
+		"make": "Kawasaki",
+		"category": "Sport",
+		"hp": 35,
+		"seat height": 30.9
+	},
+	{ 
+		"name": "Ninja 650",
+		"make": "Kawasaki",
+		"category": "Sport",
+		"hp": 71,
+		"seat height": 31.7
+	},
+	{ 
+		"name": "Z650",
+		"make": "Kawasaki",
+		"category": "Sport",
+		"hp": 71,
+		"seat height": 31.7
+	},
+	{ 
+		"name": "SV650",
+		"make": "Suzuki",
+		"category": "Sport",
+		"hp": 75,
+		"seat height": 30.9
+	},
+	{ 
+		"name": "MT-07",
+		"make": "Yamaha",
+		"category": "Sport",
+		"hp": 74,
+		"seat height": 31.7
+	},
+	{ 
+		"name": "CBR 300R",
+		"make": "Honda",
+		"category": "Sport",
+		"hp": 27,
+		"seat height": 31
+	},
+	{ 
+		"name": "R3",
+		"make": "Yamaha",
+		"category": "Sport",
+		"hp": 42,
+		"seat height": 31
+	},
+	{ 
+		"name": "RC390",
+		"make": "KTM",
+		"category": "Sport",
+		"hp": 40,
+		"seat height": 31
+	},
+	{ 
+		"name": "Iron 883",
+		"make": "Harley Davidson",
+		"category": "Cruiser",
+		"hp": 47,
+		"seat height": 28.2
+	},
+	{ 
+		"name": "Vulcan S",
+		"make": "Kawasaki",
+		"category": "cruiser",
+		"hp": 54,
+		"seat height": 28
+	},
+	{ 
+		"name": "Star Bolt",
+		"make": "Yamaha",
+		"category": "cruiser",
+		"hp": 46.2,
+		"seat height": 27.2
+	},
+	{ 
+		"name": "Rebel 300",
+		"make": "Honda",
+		"category": "cruiser",
+		"hp": 26,
+		"seat height": 27.2
+	},
+	{ 
+		"name": "Rebel 500",
+		"make": "Honda",
+		"category": "cruiser",
+		"hp": 46,
+		"seat height": 27.2
+	},
+	{ 
+		"name": "Scout 60",
+		"make": "Indian",
+		"category": "cruiser",
+		"hp": 78,
+		"seat height": 25.3
+	},
+	{ 
+		"name": "Street 750",
+		"make": "Harley Davidson",
+		"category": "cruiser",
+		"hp":55.6,
+		"seat height": 27.9
+	},
+	{ 
+		"name": "CB500x",
+		"make": "Honda",
+		"category": "ADV",
+		"hp":45,
+		"seat height": 31.8
+	},
+	{ 
+		"name": "DRZ400",
+		"make": "Suzuki",
+		"category": "ADV",
+		"hp": 33,
+		"seat height": 35
+	},
+	{ 
+		"name": "KLR650",
+		"make": "Kawasaki",
+		"category": "ADV",
+		"hp":37,
+		"seat height": 35
+	},
+	{ 
+		"name": "NC700x",
+		"make": "Honda",
+		"category": "ADV",
+		"hp":51,
+		"seat height": 33
+	},
+	{ 
+		"name": "G650 GS",
+		"make": "BMW",
+		"category": "ADV",
+		"hp": 50,
+		"seat height": 31.5
+	},
+	{ 
+		"name": "V-Strom 650",
+		"make": "Suzuki",
+		"category": "ADV",
+		"hp": 66,
+		"seat height": 33
+	},
+	{ 
+		"name": "Versys-x 300",
+		"make": "Kawasaki",
+		"category": "ADV",
+		"hp": 34,
+		"seat height": 32.1
+	},
+	{ 
+		"name": "Versys 650",
+		"make": "Kawasaki",
+		"category": "ADV",
+		"hp": 60,
+		"seat height": 33.1
+	}
+]
