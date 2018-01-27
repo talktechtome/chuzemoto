@@ -34,8 +34,8 @@ module.exports = function(app, express) {
 		const inseam = parseInt(req.body.inseam)
 
 		var height;
-		const max = inseam + 2
-		const min = inseam - 2
+		const max = inseam + 1
+		const min = inseam - 1
 
 		for(var x in motorcycles) {
 			 height = parseInt(motorcycles[x].ht, 10)
