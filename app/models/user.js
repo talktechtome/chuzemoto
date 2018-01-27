@@ -20,6 +20,9 @@ var UserSchema	= new Schema({
 	inseam: {
 		type: Number,
 		required: true
+	},
+	recommendations: {
+		type: Array
 	}
 })
 

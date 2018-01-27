@@ -4,160 +4,183 @@
 		"make": "Kawasaki",
 		"category": "Sport",
 		"hp": 35,
-		"seat height": 30.9
+		"ht": 30.9,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Ninja 650",
 		"make": "Kawasaki",
 		"category": "Sport",
 		"hp": 71,
-		"seat height": 31.7
+		"ht": 31.7,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Z650",
 		"make": "Kawasaki",
 		"category": "Sport",
 		"hp": 71,
-		"seat height": 31.7
+		"ht": 31.7,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "SV650",
 		"make": "Suzuki",
 		"category": "Sport",
 		"hp": 75,
-		"seat height": 30.9
+		"ht": 30.9,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "MT-07",
 		"make": "Yamaha",
 		"category": "Sport",
 		"hp": 74,
-		"seat height": 31.7
+		"ht": 31.7,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "CBR 300R",
 		"make": "Honda",
 		"category": "Sport",
 		"hp": 27,
-		"seat height": 31
+		"ht": 31,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "R3",
 		"make": "Yamaha",
 		"category": "Sport",
 		"hp": 42,
-		"seat height": 31
+		"ht": 31,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "RC390",
 		"make": "KTM",
 		"category": "Sport",
 		"hp": 40,
-		"seat height": 31
+		"ht": 31,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Iron 883",
 		"make": "Harley Davidson",
 		"category": "Cruiser",
 		"hp": 47,
-		"seat height": 28.2
+		"ht": 28.2,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Vulcan S",
 		"make": "Kawasaki",
 		"category": "cruiser",
 		"hp": 54,
-		"seat height": 28
+		"ht": 28,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Star Bolt",
 		"make": "Yamaha",
 		"category": "cruiser",
 		"hp": 46.2,
-		"seat height": 27.2
+		"ht": 27.2,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Rebel 300",
 		"make": "Honda",
 		"category": "cruiser",
 		"hp": 26,
-		"seat height": 27.2
+		"ht": 27.2,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Rebel 500",
 		"make": "Honda",
 		"category": "cruiser",
 		"hp": 46,
-		"seat height": 27.2
+		"ht": 27.2,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Scout 60",
 		"make": "Indian",
 		"category": "cruiser",
 		"hp": 78,
-		"seat height": 25.3
+		"ht": 25.3,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Street 750",
 		"make": "Harley Davidson",
 		"category": "cruiser",
 		"hp":55.6,
-		"seat height": 27.9
+		"ht": 27.9,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "CB500x",
 		"make": "Honda",
 		"category": "ADV",
 		"hp":45,
-		"seat height": 31.8
+		"ht": 31.8,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "DRZ400",
 		"make": "Suzuki",
 		"category": "ADV",
 		"hp": 33,
-		"seat height": 35
+		"ht": 35,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "KLR650",
 		"make": "Kawasaki",
 		"category": "ADV",
 		"hp":37,
-		"seat height": 35
+		"ht": 35,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "NC700x",
 		"make": "Honda",
 		"category": "ADV",
 		"hp":51,
-		"seat height": 33
+		"ht": 33,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "G650 GS",
 		"make": "BMW",
 		"category": "ADV",
 		"hp": 50,
-		"seat height": 31.5
+		"ht": 31.5,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "V-Strom 650",
 		"make": "Suzuki",
 		"category": "ADV",
 		"hp": 66,
-		"seat height": 33
+		"ht": 33,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Versys-x 300",
 		"make": "Kawasaki",
 		"category": "ADV",
 		"hp": 34,
-		"seat height": 32.1
+		"ht": 32.1,
+		"img": "/img/suzukidrz400.jpg"
 	},
 	{ 
 		"name": "Versys 650",
 		"make": "Kawasaki",
 		"category": "ADV",
 		"hp": 60,
-		"seat height": 33.1
+		"ht": 33.1,
+		"img": "/img/suzukidrz400.jpg"
 	}
 ]

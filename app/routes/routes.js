@@ -1,9 +1,12 @@
 var User 	= require('../models/user.js')
-var motocycles = require('../data/motorcycles.json')
+var motorcycles = require('../data/motorcycles.json')
 
 module.exports = function(app, express) {
 
-	// HOME PAGE - GET www.nameofapp.com/
+	var gloabalUser = [];
+
+	// HOME PAGE 
+	// GET chuzemoto.herokuapp.com/
 
 	app.get('/', function(req, res) {
 		res.render("index.ejs")
@@ -20,12 +23,30 @@ module.exports = function(app, express) {
 	app.post('/signup', function(req, res) {
 
 		var user = new User()
+		var recommendations = []
 
 		user.name.first = req.body.fname
 		user.name.last = req.body.lname
 		user.email = req.body.email
 		user.password = req.body.password
 		user.inseam = req.body.inseam
+
+		const inseam = parseInt(req.body.inseam)
+
+		var height;
+		const max = inseam + 2
+		const min = inseam - 2
+
+		for(var x in motorcycles) {
+			 height = parseInt(motorcycles[x].ht, 10)
+
+			// create an array of recommended bikes
+			if ( height <= max && height >= min ) {
+				recommendations.push(motorcycles[x])
+			}
+		}
+
+		user.recommendations = recommendations
 
 		user.save(function(err) {
 			if (err) {
@@ -39,8 +60,15 @@ module.exports = function(app, express) {
 					return res.send(err)
 			}
 
-			// return a sucess message
-			res.json({ message: 'User created!'})
+			// return user object
+			globalUser = user;
+			// res.redirect('/dashboard')
+
+			console.log(user)
+
+			res.render('dashboard.ejs', {
+					data: user
+			});
 		})
 	})
 
@@ -54,43 +82,47 @@ module.exports = function(app, express) {
 	// POST - chuzemoto.herokuapp.com/login
 	app.post('/login', function(req, res) {
 
+		var loggedUser;
+
 		// find the user (or at least check if exists)
 		User.findOne({
 			email: req.body.email
-		}).exec(function(err, user) {
+		}).exec(function(err, ret_user) {
 
-			if (err) throw err;
+			// loggedUser = ret_user;
 
-			// no user with that email is found
-			if (!user) {
-				res.json({
-					success: false,
-					message: 'No user with that email exists.'
-				})
-			}
-			// if user is found
-			else if (user) {
+			// if (err) throw err;
 
-				// check if passwords match
-				// if not matched, give error
-				if (!(user.password == req.body.password)) {
-					res.json({
-						success: false,
-						message: 'Sorry, wrong password.'
-					})
-				}
+			// // no user with that email is found
+			// if (!ret_user) {
+			// 	res.json({
+			// 		success: false,
+			// 		message: 'No user with that email exists.'
+			// 	})
+			// }
+			// // if user is found
+			// else if (ret_user) {
 
-				// if matched, redirect to dashboard page.
-				res.render('dashboard.ejs', { 'user': user })
-
-			}
+			// 	// check if passwords match
+			// 	// if not matched, give error
+			// 	if (!(ret_user.password == req.body.password)) {
+			// 		res.json({
+			// 			success: false,
+			// 			message: 'Sorry, wrong password.'
+			// 		})
+			// 	}
+			// }
+			res.render('dashboard.ejs', { data: ret_user })
 		})
 	})
 
 	// DASHBOARD PAGE
+	app.get('/dashboard', function(req, res) {
+		// res.render('dashboard.ejs')
+	})
 
-	// GET - chuzemoto.herokuapp.com/dashboard
-	app.get('/dashboard', function(req, res){
-		res.render
+	// LOGOUT PAGE
+	app.get('/logout', function(req, res) {
+		res.redirect('/');
 	})
 }
