@@ -76,17 +76,7 @@
         class="zg-video"
         style="opacity: 0;">
 
-        <script>
-          function iOSversion(){
-            if (/iP(hone|od|ad)/.test(navigator.platform)) {
-              var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-              return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
-            }
-          }
-          var ver = iOSversion();
-          var $iosTrigger = ver != undefined && ver.length > 0 && ver[0] < 10;
-        </script>
-
+       
         <script>
           var width = document.body.clientWidth;
           window.FullScreen = window.FullScreen || {};
