@@ -6,7 +6,7 @@
 
   <title>ChuzeMoto | Dashboard</title>
 
-  <link rel="stylesheet" href="css/signup.css">
+  <link rel="stylesheet" href="/css/dashboard.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,8 +14,47 @@
 </head>
 
 <body>
+	<header>
+		<div class="wrapper clearfix">
+			<div class="main-logo">
+				<a class="logo-wrapper" href="https://www.instagram.com/explore/tags/motorcylces/">
+					<p>#ChuzeMoto</p>
+				</a>
+			</div>
+			<div class="main-navigation">
+				<ul id="menu-header-menu">
+					<li><a href="#">ADV</a></li>
+					<li><a href="#">Sport</a></li>
+					<li><a href="#">Cruiser</a></li>
+					<li><a href="#">Gear</a></li>
+				</ul>
+			</div>
+			<div class="main-menu-actions">
+				<div class="dropdown">
+					<a href="/logout" class="log-in">
+						<span class="log-in-text">Member Log Out</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
 
-	<h1>ChuzeMoto | Dashboard</h1>
+	<section>
+		<div class="wrapper">
+			<h1>Dashboard | <%= data.name.first %> <%= data.name.last %></h1>
+
+			<!-- DATA GOES HERE -->
+			<ul class="motor-suggestions">
+					<% for (var i = 0; i < data.recommendations.length; i++) {%>
+					<li class="moto-card">
+						<img src="<%= data.recommendations[i].img %>" />
+						<h2><%= data.recommendations[i].make%> <%= data.recommendations[i].name%></h2>
+						<h3>Category: <%= data.recommendations[i].category %> | Seat-Height: <%= data.recommendations[i].ht %></h3>
+					</li>
+					<% } %>
+			</ul>
+		</div>
+	</section>
 
 </body>
 </html>

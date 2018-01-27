@@ -2,7 +2,6 @@ h1 {
 	font-size: 32px;
 	text-transform: uppercase;
 	text-align: center;
-
 }
 
 form {
@@ -11,18 +10,14 @@ form {
 	padding: 25px;
 	width: 25%;
 	margin: 0 auto;
-
-	
 }
 
 label {
 	display: block;
 	margin-bottom: 25px;
-
 }
 
 .container {
 	width: 1024px;
 	margin: 0 auto;
-
 }
