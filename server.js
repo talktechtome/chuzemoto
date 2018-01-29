@@ -5,7 +5,7 @@ var express 	= require("express")
 var app 		= express();	// creating an express framework for the app
 var mongoose	= require("mongoose")
 var config		= require('./config')
-var morgan		= require('morgan') 
+var morgan		= require('morgan')
 var path		= require('path')
 var bodyParser	= require('body-parser')
 
